@@ -1,0 +1,10 @@
+*begin
+
+*infer exports on
+
+*include "dupce.svx"
+*include "dupce2.svx"
+
+*equate dupce.2 dupce2.2
+
+*end

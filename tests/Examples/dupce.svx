@@ -1,0 +1,24 @@
+*begin Jaskinia_na_Dupce
+
+*infer exports on
+
+*title "Jaskinia na Dupce"
+
+*units tape metres
+
+*calibrate declination 2.8
+
+*entrance 0
+*team "Waldemar Graban" compass clino - lider
+*team "Paulina Kulpa"   notes
+*team "Józef Kucia"     tape	      - dog
+*date 2019.05.18
+
+*data normal from to tape compass clino
+
+0	1	6.5	293	-36
+1	2	5.4	234	-41
+2	3	2.5	237	-38
+3	4	7.9	246	-33
+
+*end

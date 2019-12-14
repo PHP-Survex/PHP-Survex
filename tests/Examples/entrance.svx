@@ -1,0 +1,909 @@
+; J13/14/15, Mammoth Cave
+; Jenolan, NSW
+; Entrance Cavern and related areas.
+
+*cs UTM56S
+*cs out UTM56S ; The coordinate system is UTM Zone 56H, for both input and output.
+*fix ent.J13 0224095.85 6255375.96 842.48 ; Surface survey back to state survey marker 65332, McKeowns Lookout.
+
+*entrance ent.J13
+*entrance ent2.J14
+*entrance ent2.J15
+
+*equate jug.MFC114 ent.MFC114
+*equate con.101 ent.MFC101
+*equate con.102 ent.MFC102
+*equate sq.S001 jug.S001
+*equate sand.001 jug.R002
+*equate con.112 ent.MFC112
+*equate ent2.M114 ent.MFC114
+*equate ent2.M116 ent.MFC116
+*equate rr.S001 jug.S001
+*equate rr.M308 ent2.M308
+*equate chr.R002 jug.R002
+*equate sq.01 ent.MFC101
+*equate surface.J13 ent.J13
+*equate surface.J14 ent2.J14
+*equate surface.J15 ent2.J15
+
+;*calibrate declination -12.3 ; For True North.
+*calibrate declination -10.7 ; For Grid North.
+
+
+;------------------------------------------------------------------
+; Main Traverse from Conglomerate Cavern to J13 Tag.
+
+*date 2018.07.06
+*begin ent
+
+*team "Greg Holmes"
+*team "Ken Anderson"
+*team "Waldemar Graban"
+
+; Instruments:
+; Tracon S25 Forestry Compass No. 83376 and 50m Fibreglass Tape
+
+*calibrate declination -10.7 ; For Grid North.
+
+;FROM     TO   DISTANCE COMPASS  CLINO  STATION
+MFC100 MFC101    1.544  091.58  -11.67  ; MFC101 Flagged 5cm wall projection
+MFC100 MFC102    3.694  175.67   +8.83  ; MFC102 Tip of wall at corner
+MFC103 MFC102    6.460  320.50  -10.25  ;
+MFC103 MFC104    7.798  116.17   +4.75  ; MFC104 Pencilled point on SW wall
+MFC105 MFC104    2.844  358.17   +6.00  ;
+MFC105 MFC106    9.336  119.33  +15.50  ; MFC106 Marked tip of wall projection
+MFC107 MFC106    5.549  241.00   -7.00  ;
+MFC107 MFC108    4.647  043.58  -20.75  ; MFC108 Tip of Cobble
+MFC109 MFC108    1.492  025.83  +22.50  ; 
+MFC109 MFC110   12.484  149.58  +26.25  ; MFC110 End of room
+MFC109 MFC111    9.502  241.25   -8.00  ; MFC111 Tip of cobble, end of room, pencilled.
+MFC109 MFC112    7.878  314.50  +24.67  ; MFC112 Flagged cemented cobble
+MFC113 MFC112    5.758  184.42  -22.00  ;
+MFC113 MFC114    6.642  292.50   +0.75  ; MFC114 Pencilled mark of south end entrance chamber
+MFC115 MFC114   12.218  162.25  -26.25  ; 
+MFC115 MFC116   23.446  008.25  +44.25  ; MFC116 Pencilled 10cm rock on east wall of entrance chamber
+MFC117 MFC116    8.162  159.50  -31.00  ;
+MFC117 J13       8.954  307.75  +38.17  ; J13 tag, main entrance
+MFC117 MFC118    1.835  145.67  -31.50  ; MFC118 Copper nail on left at base of first climb down.
+
+*data passage station left right up down
+MFC101 0.1 1.5 2 1.2
+MFC100 1.5 3 3 1.5
+MFC102 0.1 0.4 4.5 0.5
+MFC103 1 1 1.5 1.5
+MFC104 1.3 0.2 1 1.8
+MFC105 0.8 0.8 2 1.5
+MFC106 1.2 0.4 1.8 1.7
+MFC107 1.5 1.3 4 1.5
+MFC108 2 6 2 2
+MFC109 2 2 6.5 1.5
+MFC110 1.5 1.5 2 0.5
+
+*data passage station left right up down
+MFC109 1.5 1 6.5 1.5
+MFC111 1.5 1 0 0.6
+
+*data passage station left right up down
+MFC109 1.8 1.7 6.5 1.5
+MFC112 2 2 5.5 1.5
+MFC113 2 2 0.5 0.6
+MFC114 6 5 6 0.5
+MFC115 0.5 10 8 1.5
+MFC116 16 1 5 1.5
+MFC117 1.2 0.4 6 1.2
+J13 0 2 2 1
+
+
+;------------------------------------------------------------------
+; Instrument Disto X AP
+
+*date 2013.12.7
+*team "Alan Pryke"
+*data default
+
+;FROM     TO   DISTANCE COMPASS  CLINO  STATION
+E01 J13 2.78 230.1 36.4 ; E01 Roof edge.
+E01 E02 3.61 080.4 -4.6 ; E02 Far wall
+E01 E03 2.35 013.1 -48.5 ; E03 Rubble of floor.
+E03 E04 2.54 320.9 -11.3 ; E04 Roof boulder tip.
+E04 E05 1.63 016.5 -16.3 ; E05 Roof knob RHS.
+E05 E06 0.85 301.2 18.4 ; E06 LHS Jut.
+E06 E07 1.95 334.0 20.4
+
+*data passage station left right up down
+E01 0 1 3 1
+E03 0.3 0.5 3 0
+E04 0.2 0.7 0.2 0.4
+E05 0.5 0 0 0.4
+E06 0 1 0 0.4
+E07 0 1 0 0.4
+
+*end ent
+
+
+;------------------------------------------------------------------
+; Main Traverse from Entrance Cavern to Jug Handle, Forty Foot and 
+; Cold Hole
+
+*date 2001.4.8
+*begin jug
+
+*team "Ian Cooper"
+*team "Philip Maynard"
+*team "Shannon Crack"
+
+; Instruments:
+; Tracon S25 Forestry Compass No. 83376 and 30m Fibreglass Tape
+
+*calibrate declination -10.7 ; For Grid North.
+
+;FROM     TO   DISTANCE COMPASS  CLINO  STATION
+MFC120 MFC114   12.442  173.92  -24.25  ; MFC114 Marked point at base of entrance chamber.
+MFC120 MFC121    4.665  040.67  -37.00  ; MFC120 Instrument station outside jug handle.
+MFC122 MFC121    4.474  137.25   46.50  ; MFC121 Marked point of boulder below jughandle.
+MFC122 MFC123    5.160  289.42  -35.25  ; MFC123 Prominent 0.5m roof pendant
+MFC122 R001      2.302  016.50    8.75  ; R001 Flagged 8cm roof pendant
+MFC122 R100      7.166  005.42   -4.00  ; R100 Pencilled R.wall flake low down
+MFC124 MFC123    0.588  249.58  -12.75  ; MFC124 Inst site at start of 40' route
+MFC124 MFC125    0.754  265.00  -10.75  ; MFC125 Copper nail old survey
+MFC124 MFC126    3.198  227.33   -7.00  ; MFC126 Rock corner over "40 foot"
+MFC126 MFC127    6.420    -      DOWN   ; MFC127 Point on pitch (2/3 way down pitch)
+MFC128 MFC127    2.765  143.42    8.25  ; MFC128 Instrument site on slope beside pitch.
+MFC128 S001      3.752  344.67   26.50  ; S001 Flagged Copper nail at base of rockpile route.
+
+R101   R100      5.194  152.00   -4.00  ; R101 Instrument site at streamway junction
+R101   R102     15.704  342.25    3.50  ; R102 Junction up side passage; pencilled wall point.
+R101   R103      2.850  022.17    6.75  ; R103 highest tip of 2mX1mX1.5m boulder in centre of passage.
+R104   R103      3.698  265.08   -5.00  ; R104 Instrument site next to flowstone cemented cobbles.
+R104   R105      1.348  338.92    0.50  ; R105 Copper nail on side of roof pendant
+R104   R002     12.646  006.00    4.75  ; R002 Flagged formation pendant at Sand Passage junction.
+
+*data passage station left right up down
+MFC114 7 5 10 1
+MFC120 3 5.9 12 1.5 
+MFC121 2 0.8 2 0.5
+MFC122 1.3 5 6 1.1
+MFC123 1.5 1 0 1
+MFC124 1 0.6 3 1.2
+MFC126 1 2 0.3 2
+MFC127 6 0.6 1.6 0
+MFC128 0.6 2 3.5 1
+S001 1 1.8 0.3 1.2
+
+*data passage station left right up down
+MFC122 2 1.5 6 1.1
+R100 1 0 1.3 0.2
+R101 0.5 1.5 0.4 0.6
+R102 0 1.1 1 0.8
+
+*data passage station left right up down
+R101 0.5 1.5 0.4 0.6
+R103 1.3 1.3 1.3 1.2
+R104 3 2.5 2.2 0.8
+R002 3 1.6 0.5 0.8
+
+*end jug
+
+
+;------------------------------------------------------------------
+; Rockpile Route to Southern section
+
+*date 2002.9.15
+*begin rr
+
+*team "Philip Maynard"
+*team "Ian Cooper"
+*team "Rod O'Brien"
+
+; Instruments:
+; Suuntos and 30m Fibreglass Tape
+
+*calibrate declination -10.7 ; For Grid North.
+
+;FROM  TO   DISTANCE COMPASS  CLINO  STATION
+R001A M700     5.70     271      -7   ; R001 Marked roof proj. base of Jug handle.  Bollocks.  It's not R001.
+M700 M701     4.14     248      18   ; M700 Marked wall at boulder.
+M701 M702     3.88     115      61   ; M701 X on boulder.
+M702 M308A     3.84     119      37   ; M308 Pencilled above bones in Ent. chamb.
+
+M701 M703     4.64     267     -47   ; 
+M703 M704     1.06     288      -3   ; M704 Lip of 1.5c
+M704 M705     4.45     013.5    -9   ; M705 Underside of 2m rock.
+M705 M706     1.90     101     -68   ; M706 Marked edge @ base of 2c.
+M706 M707     0.62     189      -6   ; M707 R wall point.
+M707 M708     4.37     143     -40   ; M708 Top of 1.5m floor rock.
+M708 S001     1.48     334      44   ; S001 Copper nail in rift below 40 foot.
+
+*data passage station left right up down
+R001A 3 1.5 0 1.5
+M700 1.4 1.6 0.8 3
+M701 1.3 0 2 0.6
+M702 1.8 0 2 0.4
+M308 1 1.2 0 1
+
+*data passage station left right up down
+M701 0 1.2 1.5 1.2
+M703 1.2 0.1 0.2 0.3
+M704 0.5 0.7 0.3 1.5
+M705 1 0.2 0 0.5
+M706 0.6 0.6 0.3 0.2
+M707 0.3 0 1 1.5
+M708 0.9 2 2 0.8
+S001 0.5 1.2 0.2 1.4
+
+
+;------------------------------------------------------------------
+*data default
+*date 2013.3.17
+*team "Philip Maynard"
+*team "Thomas Wilson"
+
+; Instruments:
+; Disto X KM2
+
+R001B M750 6.79 275.1 -0.8 ; Bollocks.  It's not R001.
+M750 M751 4.59 238.9 20.0
+M751 M752 3.71 095.7 57.9
+M752 M308B 3.85 119.0 34.2
+
+M751 M753 4.06 287.7 -55.8
+M753 M754 1.65 272.1 -29.4
+M754 M755 4.43 010.6 -18.4
+M755 M756 2.17 103.3 -67.0
+M756 M757 0.55 177.6 10.6
+M757 M758 4.78 146.1 -46.3
+M758 S001 1.24 344.3 42.6
+
+*end rr
+
+
+;------------------------------------------------------------------
+; Entrance Chamber.
+
+*begin ent2
+*date 2001.7.19
+*team "Philip Maynard"
+*team "Tim Moulds"
+
+; Instruments:
+; Suuntos and 30m Fibreglass Tape
+
+*calibrate declination -10.7 ; For Grid North.
+
+;FROM  TO   DISTANCE COMPASS  CLINO  STATION
+M114 M300     7.60     301     -23  ; M114 Pencilled at exit from Congl. Cavern.
+
+M114 M301     7.56     066      23  ; M300 Pencilled.
+M301 M302     9.40     357      11  ; M301 Cobble in R wall.
+M302 M303     8.36     238      -8  ; M302 Top of ridge.
+M303 M114     8.91     173     -24  ; M303 Corner of large boulder.
+
+M302 M304     6.45     346       8  ;
+M304 M305     4.47     326      -2  ; M304 In R side of rift.
+M305 M306     3.99     345       0  ; M305 L wall rift.
+;                                     M306 L wall rift.
+M303 M307     6.57     316      19  ;
+M307 M308     3.23     320      -4  ; M307 Pt on right wall.
+;                                     M308 Right wall proj.  Goes down to Rockpile Route.
+
+J14  M310     2.69     047      4.5 ; J14 Tag.
+M310 M311     2.30     107    -16   ; M310 Floor rock.
+M311 M312     3.36     154    -12.5 ; M311 L wall.
+M312 M313     1.61     090     24   ; M312 Coral knob R wall.
+M313 M116    10.40     098    -34   ; M313 Coral knob on ledge.
+;                                   ; M116 Pencilled on N wall.
+
+*data passage station left right up down
+M114 0 2.5 8 0.4
+M300 1.8 2 4 1
+
+*data passage station left right up down
+M114 2 0 8 0.4
+M301 1 1.4 4 1
+M302 3.5 1 10 2
+M303 4 2.5 12 2.5
+M114 1.5 4 8 0.4
+
+*data passage station left right up down
+M302 1 1 1.5 0.7
+M304 1.2 0 1.3 0.3
+M305 0 0.8 0.6 1.2
+M306 0 0.4 0.5 1
+
+*data passage station left right up down
+M303 2.5 4 12 2.5
+M307 0.5 0 5 1.4
+M308 1 0 1.5 0.7
+
+*data passage station left right up down
+J14 0 1 1 1.3
+M310 1.1 0.2 0.3 0.1
+M311 0 0.7 0.2 0.3
+M312 0.6 0 1.3 0.8
+M116 6 10 8 1.8
+
+*data default
+
+
+;------------------------------------------------------------------
+*date 2002.6.2
+*team "Philip Maynard"
+*team "Alan Pryke"
+*team "Matthew Fisher"
+
+; Instruments:
+; Suuntos and Leica Disto Classic EDM
+
+;FROM  TO   DISTANCE COMPASS  CLINO  STATION
+J15  M320     1.53     227      -9   ; J15 Tag.
+M320 M321    14.01     154     -50   ; M320 Rock point on surface.
+M321 M116    10.04     028     -24   ; M321 Roof of entrance chamber.
+M116 M322     6.24     271       2   ; M116 Pencilled on N wall.
+M322 M323    14.01     238     -25   ; M322 Tip of highest boulder.
+;                                      M323 Corner of chamber.
+M322 M324    22.33     202     -20   ; M324 Into corner.
+M322 M325     9.85     163     -25   ; M325 Corner of chamber.
+M322 M326     1.00      -       UP   ; 
+M326 M327    37.30     160     -37   ; 
+M327 M114     2.88     290     -26   ; M114 Pencilled at corner of base of chamber.
+
+*data passage station left right up down
+M320 1 2 1 0.8
+M321 15 8 6 10
+M116 7.8 5.7 3.4 1.7
+M322 6 0.8 12 3.7
+M323 9 0.6 15 1.4
+
+*data passage station left right up down
+M322 6 0.8 12 3.7
+M324 0 1 4 1.6
+
+*data passage station left right up down
+M322 7.3 1.4 12 3.7
+M325 5 12 20 2
+
+*end ent2
+
+
+;------------------------------------------------------------------
+; Side Passages around Conglomerate Cavern.
+
+*date 2001.5.13
+*begin con
+*data default
+
+*team "Philip Maynard"
+*team "Mike Lake"
+
+; Instruments:
+; Suuntos and 30m Fibreglass Tape
+
+*calibrate declination -10.7 ; For Grid North.
+
+;FROM  TO   DISTANCE COMPASS  CLINO  STATION
+101  200       5.10    267      24   ; 100 Flagged
+200  201       2.18    224      42   ; 200 Left Wall
+201  202       3.52    228       8   ; 201 Sharp Blade on Right Wall
+                                      ; 202 Chokes
+101  203       5.05    228      39   ; 100 Flagged
+203  204       3.25    219      28.5 ; 203 Pencilled knob above 2c
+204  205       3.45    243      24   ; 204 Stalagmite
+205  206       2.50    210       0   ; 205 Conglomerate knob
+                                      ; 206 Chokes
+203  207       2.60    142     -36   ; 203 Pencilled knob above 2c
+207  102       1.33    044     -33   ; 207 Sharp knob
+102  208       1.75    129      24   ; 102 Forestry compass point under knob
+208  209       1.50    014      19   ; 208 Junction
+209  210       1.25    058       6   ; 209 Sharp Corner
+210  211       2.10    326      12   ; 210 Right Wall
+211  212       3.33    073       3   ; 211 Left Wall
+212  213       1.65    100       0   ; 212 Right Wall
+                                     ; 213 Gets small
+
+*data passage station left right up down
+101 0.1 3 5 1.5
+200 0 0.3 2 1.2
+201 0.8 0 1.5 1
+202 0.2 0.2 0.2 0
+
+*data passage station left right up down
+101 0.1 3 5 1.5
+203 0.8 0 2 1.3
+204 1 0.1 1 1.7
+205 1.5 0.6 0 0.6
+206 0.3 0.3 0.3 0.3
+
+*data passage station left right up down
+203 1.5 0.5 2 1.2
+207 0.2 1 3 0.2
+102 0.3 1 0 0.4
+208 1.2 0 4 1.4
+209 0.4 0.1 1.3 1.8
+210 0.3 0.3 1.2 1.4
+211 0.8 0 1.6 1.7
+212 0.5 0 0.6 1.2
+213 0 0.4 0.3 0.1
+
+
+;------------------------------------------------------------------
+*date 2004.6.14
+*team "Megan Pryke"
+*team "Alan Pryke"
+*data default
+
+204   204A  2.60     239     24
+204A 204B  5.70     132     33
+
+*data passage station left right up down
+204 1 0.2 1.5 1.5
+204A 0.9 0.9 0.4 0.1
+204B 1 1 1 0.5
+
+
+;------------------------------------------------------------------
+*date 2001.5.13
+*team "Philip Maynard"
+*team "Tim Moulds"
+*data default
+
+; Instruments:
+; Suuntos and 30m Fibreglass Tape
+
+;FROM TO   DISTANCE COMPASS  CLINO  STATION
+112  M220    6.71     040      -9  ; 112 Flagged under Fire Chamber.
+M220 M221    5.17     200     -25  ; M220 Corner on L wall.
+M221 M222    5.12     141       8  ; M221 Pencil mark.
+M222 112     7.33     297      22  ; M222 Cobble in L wall.
+
+*data passage station left right up down
+112 1.5 2 6 2
+M220 3 0 5 1.5
+M221 2 0.2 0.5 0.2
+M222 2.5 0.5 5 1.6
+112 1.2 1.5 6 2
+
+
+;------------------------------------------------------------------
+; Fire Cavern
+*date 2004.6.14
+*team "Philip Maynard"
+*team "Kevin Moore"
+*data default
+
+;FROM TO   DISTANCE COMPASS  CLINO  STATION
+112    M500     14.38     137      19     ; 112 Flagged in Congomerate cavern.
+M500 M501      4.80      141      34     ; M500 Flowstone canopy above pitch.
+M501 M502      9.84      152       9      ; M501 Top of slope @ squeeze.
+;                                                             M502 Flowst. wall back of Fire Cavern.
+
+*data passage station left right up down
+112 2.3 2.5 6 1.2
+M500 1.5 1.5 1.2 0.3
+M501 0.6 0.9 0 0.6
+M502 1.2 3 2.5 2
+
+*end con
+
+
+;------------------------------------------------------------------
+; Mammoth Squeeze.
+
+*begin sq
+*data default
+
+*date 2012.8.12
+*team "Alison Chau"
+*team "Rowena Larkins"
+
+*calibrate declination -10.7 ; For Grid North.
+
+; Instruments:
+; Disto X KM2
+
+;FROM  TO   DISTANCE COMPASS  CLINO  STATION
+01 02 2.68 051.7 -12.0
+02 03 1.86 132.6 -10.3
+03 04 0.77 063.4 -15.4
+04 05 0.74 010.7 3.2
+05 06 0.75 273.3 -5.9
+06 07 0.86 006.4 4.3
+07 08 1.44 032.5 3.1
+08 09 1.18 137.7 2.3
+09 10 1.54 081.3 13.2
+10 11 1.65 009.5 26.6
+11 12 1.17 021.6 14.8
+12 13 2.00 125.3 -28.8
+
+*data passage station left right up down
+01 0.2 1.4 2 1
+02 0 0.3 0.3 0.7
+03 0.3 0 0.3 0.8
+04 0.2 0.1 0.5 0.5
+05 1 0 0.5 0.4
+06 0 0.3 0.5 0.2
+07 0 0.3 0.5 0.3
+08 0 0.3 0.3 0.3
+09 0.3 0 0.5 0.2
+10 1 0.7 0.8 0.2
+11 0.1 0.5 1 0.2
+12 0.7 1.5 0 3
+
+
+;------------------------------------------------------------------
+*date 2013.1.12
+*team "Alison Chau"
+*team "Phil Maynard"
+*team "Thomas Wilson"
+*team "Henry Shannon"
+*data default
+
+; Instruments:
+; Disto X KM2
+
+;FROM   TO   DISTANCE COMPASS  CLINO  STATION
+13 14 8 330 -40
+14 15 7 000 35
+15 S001 5 340 25 ; S001 Copper nail exit of Rockpile Route.
+
+*data passage station left right up down
+13 2 0 1.8 1.8
+14 0 1.3 3 1.5
+15 2.2 0 4 1.5
+S001 1.2 0.5 0.2 1.4
+
+*data default
+*end sq
+
+
+;-----------------------------------------------------------------------------
+;SAND PASSAGE				
+
+*begin sand
+
+*date 1991.1.1
+*team "Mark Staraj"
+*team "Steven Tidman"
+*team "Chris Norton"
+
+; Instruments:
+; Suuntos and 30m Fibreglass Tape
+
+*calibrate declination -10.7 ; For Grid North.
+					
+;FROM   TO   DISTANCE COMPASS  CLINO  STATION
+001 002       10.60     309      -4
+002 003        7.40     299      -8
+003 004        3.92     348     -13
+004 005        2.32     329     -26
+005 006        2.07     297      -1
+006 007        2.20     247      51
+007 008        2.80     346      51
+008 009        3.17     300       6
+
+*data passage station left right up down
+001 1.5 0.3 0.4 0.7
+002 0.6 0.4 1 0.3
+003 0 1.4 0.5 0.3
+004 0 0.4 0 1
+005 0.2 0.2 0.6 0.4
+006 0.6 0.4 2 0.1
+007 1.6 0 0.6 0.3
+008 0.1 0.2 0.4 0
+009 0.3 0 0.5 0.2
+
+
+;------------------------------------------------------------------
+*date 2002.3.17
+*team "Alan Pryke"
+*team "Phil Maynard"
+*team "Tim Moulds"
+*team "Sean Hill"
+*data default				
+
+; Instruments:
+; Suuntos and 30m Fibreglass Tape
+
+*calibrate declination -12.3
+*equate R300 006
+
+;FROM   TO   DISTANCE COMPASS  CLINO  STATION
+R300 R301     2.66     331       2   ; 
+R301 R302     4.20     298     -19   ; R301 Roof blade.
+;                                      R302 Rock on floor.
+R301 R303     6.34     338     -18   ; 
+R303 R304     2.19     298     -21   ; R303 Blade.
+R304 R305     5.19     316     -27   ; 
+R305 R306     2.30     289     -29   ; R305 Knob R wall.
+R306 R307     3.39     309     -17   ; R306 Corroded roof formation RHS.
+R307 R308     1.28     346     -36   ; R307 Near crinoid.
+R308 R309     5.42     336       2   ; R308 L wall blade.
+R309 R310     3.54     052      56   ; R309 L wall knob.
+R310 R311     7.00     329       4   ; R310 RH wall.
+R311 R312     2.67     347      19   ; R311 LHS rib.
+
+R311 R313     5.29     262     -54   ; 
+R313 R314     7.97     336       6   ; R313 Nothing much.
+R314 R315     4.89     074      61   ; R314 Floor knob.
+R315 R316     5.68     340      34   ; R315 Top of blade RHS.
+R316 R317     2.94     083      46   ; R316 Roof jut.
+R317 R318     2.38     066      61   ; R317 Blade on floor.
+R318 R319     2.13     319      43   ; 
+R319 R320     0.94     086       6   ; R319 Fossil on L wall.
+R320 R321     2.08     342      23   ; R320 Flowst. RHS.
+R321 R322     2.82     004      51   ; R321 Blade of f/stone wall.
+
+R316 R323     1.86     008      63   ; R323 Roof jut.
+R323 R324     2.51     017      36   ; R324 Jut RHS.
+R324 R325     8.20     331      12   ; R325 RH wall.
+R325 R326     4.76     310     -16   ; R326 Roof jut.
+
+*data passage station left right up down
+R300 1.2 0.2 1.4 0.1
+R301 0.7 0.5 0 0.6
+R302 0.7 0.1 0.2 0.6
+
+*data passage station left right up down
+R301 0.8 0.4 0 0.6
+R303 0.6 0 0.1 1
+R304 0.3 0.3 0 0.8
+R305 1 0.1 0.6 1
+R306 0.9 0 1 0.5
+R307 0 1 0.4 0.6
+R308 0 0.6 0.8 0.2
+R309 1.2 0.5 0 0.7
+R310 0.8 0 0.1 1
+R311 0.5 1 0.5 1
+R312 0.1 0.4 0 0.3
+
+*data passage station left right up down
+R311 2 0.4 0 0.5
+R313 0.3 0 1.5 0.2 
+R314 3 1.2 3.5 0
+R315 0.6 0 0.2 1.7
+R316 1 1 0 0.8
+R317 0.4 1.3 0.7 0
+R318 0.3 0 0.5 1
+R319 0 0.6 0.7 0.5
+R320 1 0 0.4 0
+R321 1.2 0 1 0
+R322 0.6 0.5 0 0.5
+
+*data passage station left right up down
+R316 0.6 1 1 1.6
+R323 1 1 0 1
+R324 1.2 0.7 0 0.5
+R325 0.8 0 1 1.3
+R326 0.1 0.3 0.6 0.7
+R327 0.5 0 0.1 0.5
+R328 1 0 0.5 0.1
+R329 0 0.4 0.3 0.1
+R330 0 0.8 1.4 1.2
+R331 0.3 0 0.8 1
+R332 0.3 0.6 1 0
+R333 0.6 0 0.1 0
+R334 1.4 0 1 0.4
+R335 0.1 0.9 0.8 0
+R336 1.4 1 1.2 0.6
+
+*data passage station left right up down
+R334 0.6 1.2 0 0.4
+R337 1 1.6 0 0.4
+R338 0.4 0 0.2 0.3
+R339 0 0.3 0.3 0.2
+R340 0.2 0.3 0.3 0
+R341 0.2 0.1 0.8 0
+R342 0.4 0.2 0.8 0.6
+
+
+;------------------------------------------------------------------
+*date 2002.5.5
+*team "Phil Maynard"
+*team "Simon Goddard"
+*data default
+
+; Instruments:
+; Suuntos and 30m Fibreglass Tape
+
+;FROM   TO   DISTANCE COMPASS  CLINO  STATION
+R326 R327     3.63     298     -27   ; R326 Roof jut.
+R327 R328     6.14     301     -32   ; R327 Right wall point.
+R328 R329     2.28     322       5   ; R328 Blade.
+R329 R330     6.23     349      27   ; 
+R330 R331     2.61     358      54   ; 
+R331 R332     4.56     312     -12   ; 
+R332 R333     6.49     338      23   ; R332 Rock on floor
+R333 R334     8.40     314       8   ; 
+R334 R335     3.57     239      33   ; R334 Entrance of Gunbarrel
+R335 R336     2.32     291      45   ; R335 RPile choke.
+
+R334 R337     1.48     124      19   ; 
+R337 R338     3.76     026      61   ; R337 Roof pendant at climb.
+R338 R339     3.57     333      22   ; R338 Roof of climb
+R339 R340     1.40     347      32   ; 
+R340 R341     3.37     312     -22   ; R340 Above phreatic drop.
+R341 R342     1.24     331      24   ; R341 Floor.
+;                                      R342 Knob at junction.
+
+
+;------------------------------------------------------------------
+*date 2013.10.13
+*team "Phil Maynard"
+*team "Thomas Cunningham"
+
+; Instruments:
+; Disto X KMX2
+
+;FROM   TO   DISTANCE COMPASS  CLINO  STATION
+R342 R343 6.41 000.5 46.7
+
+R342 R344 3.46 305.5 -21.8
+
+*data passage station left right up down
+R342 0 1 0.8 0.6
+R343 0.8 0 1 1
+
+*data passage station left right up down
+R342 0.5 0 0.8 0.6
+R344 0.6 0.3 0 0.4
+
+*end sand
+
+
+;------------------------------------------------------------------
+; Side Passages around Cold Hole.
+
+*begin chr
+*data default
+
+*date 2005.2.20
+*team "Mark Staraj"
+*team "Shannon Crack"
+
+; Instruments:
+; Suuntos and 30m Fibreglass Tape
+
+*calibrate declination -10.7 ; For Grid North.
+
+;FROM  TO   DISTANCE COMPASS  CLINO  STATION
+R002     CHR01 12.04     188       -7     ; R002 Bottom of stal 1.5m back from Sand Passage.
+CHR01 CHR02   3.83     244       -1     ; CHR01 Cnr of large rock.
+CHR02 CHR03   3.45     181     -12     ; CHR02 Top edge of large rock.
+CHR03 CHR04   2.59     172        2     ; CHR03 Left edge of large rock in floor.
+CHR04 CHR05   5.32     289      29     ; CHR04 Pt on rock jammed between roof & floor.
+CHR05 CHR06   3.07     307      34     ; CHR05 Pt on edge of roof.
+CHR06 CHR07   5.71     273     -48     ; CHR06 RHS on boulder looking down to pit.
+                                                              ; CHR07 Tip of rock in bottom of pit.
+CHR04 CHR10   3.85     239      29     ; CHR10 Edge of rock at base of climb.
+CHR10 CHR11   6.10     164      73     ; CHR11 Triangular tip of rock on back wall.
+CHR11 CHR12   5.06     330      23     ; CHR12 Edge of hole top of triangular rock.
+
+CHR11 CHR13   6.50     248     -16     ; CHR13 Top of rock pillar.
+CHR13 CHR13A 9.96    330      14     ; CHR13A Back wall of rift on black boulder.
+
+CHR13 CHR14   3.78     075       -7     ; CHR14 Edge of rock facing passage.
+CHR14 CHR15   3.55     140      11     ; CHR15 Low pt on roof.
+CHR15 CHR16   5.24     128      15     ; CHR16 RHS looking back in from E.C.
+
+CHR11 CHR20   1.84     294     -14     ; CHR20 Top of rock.
+CHR20 CHR21   4.73     091     -31     ; CHR21 Edge of rock at drop.
+CHR21 CHR22   5.84     059     -48     ; CHR22 Tip of roof pendant.
+CHR22 CHR03A   4.99     322       -4     ; 
+CHR03 CHR30   8.08     329        9     ; 
+CHR30 CHR31   7.85     341        4     ; CHR31 Pt on RHS opp. side passage.
+CHR31 CHR32   5.32     273       -1     ; CHR32 Pt in sqz.
+
+CHR40 CHR41   3.71     175      32     ; CHR40 End of new passage.
+CHR41 CHR42   2.88     224      66     ; 
+CHR42 CHR32   2.65     131     -41     ; 
+
+*data passage station left right up down
+CHR04 2.2 3 0.2 0.3
+CHR05 1.7 1.2 0 0.8
+CHR06 1.5 0 1.5 0.4
+CHR07 0.5 1.2 0.8 0.3
+
+*data passage station left right up down
+CHR04 2.2 3 0.2 0.3
+CHR10 0.5 0.2 1 0.3
+CHR11 3 3 2 2.5
+CHR12 0.2 0.3 0.4 0.2
+
+*data passage station left right up down
+CHR11 0 2 1 1.5
+CHR13 1 2 4 2
+CHR13A 0.7 1.1 1.5 0.4
+
+*data passage station left right up down
+CHR13 1 2 4 2
+CHR14 0.5 0.7 1 0.4
+CHR15 0.2 0.3 0 0.4
+CHR16 0 0.6 1.2 1.2
+
+*data passage station left right up down
+CHR11 3 3 2 0.8
+CHR20 2 2 2 0
+CHR21 0.2 1 2 0
+CHR22 0.4 0.3 0 0.3
+CHR03 2.5 1 1.5 1
+CHR31 0.2 0.2 0.4 0.3
+CHR32 0.3 0.3 0.4 0.5
+CHR42 0 0.5 0 1
+CHR41 0.3 0.5 1.5 1.7
+CHR40 0.5 0.1 0.5 1
+
+*end chr
+
+;------------------------------------------------------------------
+; Surface around Mammoth Bluff, adds the other entrances.
+
+*begin surface
+*data default
+
+*flags surface
+*date 2000.11.11-2000.11.12
+*team "Ian Cooper"
+*team "Philip Maynard"
+*team "Estelle Lifran"
+*team "Don Matthews"
+*team "Eric Tse"
+
+; Instruments
+; Ushikata Tracon S25 forestry compass
+; 50m fibreglass tape
+; ASF grade 6C.
+
+; *calibrate declination -12.3 ; True North
+*calibrate declination -10.7 ; Grid North MGA/GDA94
+
+J13   MFC05  2.484 317.000   0.000 ; J13 tag  Mammoth Cave entrance.
+;                                    MFC05  Instrument site in Mammoth Cave entrance.
+MFC05 MFC06  2.474 241.583  12.833 ; MFC06  Top of 1.5m rock south west of J13 entrance.
+MFC06 MFC07 11.890 172.500  26.000 ; MFC07  Instrument site outside upper entrance to Mammoth Cave.
+MFC07 MFC08  9.688  29.167  32.167 ; MFC08  Rock tip on edge of 6m cliff.
+MFC08 MFC09 16.825 160.250  30.500 ; MFC09  Instrument site.
+MFC09 MFC10 19.890 119.667  39.000 ; MFC10  4cm flake point on downhill edge of 1.5m rock.
+MFC10 MFC11 12.963 211.667 -21.167 ; MFC11  Instrument site outside Foz Hole.
+MFC11 MFC12 21.522 232.500 -17.833 ; MFC12  Knot on trunk of large eucalypt.
+MFC12 MFC13  6.052 346.500 -46.000 ; MFC13  Instrument site outside Casteret Cave.
+MFC13 MFC14 25.095 287.500 -31.000 ; MFC14  Trunk of small spiky tree.
+MFC14 MFC15 20.600 333.250 -30.833 ; MFC15  Instrument site in bed of Jenolan River.
+MFC15 MFC02 17.111  82.917   4.500 ; MFC02  Top of 0.3m rock on south bank of Jenolan River.
+MFC02 MFC03  3.663 310.333  -9.750 ; MFC03  Instrument site in bed of Jenolan River.
+MFC03 MFC04 20.722   8.917   1.750 ; MFC04  Edge of 1.3m rock in Jenolan river below J13 entrance.
+MFC04 MFC05 14.271  99.250  21.750 ; MFC05  Instrument site in Mammoth Cave entrance.
+
+;	-----	-----	-----
+MFC07 J15    2.906  81.083  -0.167 ; MFC07  Instrument site outside upper entrance to Mammoth Cave.
+;                                    J15 tag  Upper entrance to Mammoth Cave			
+
+;	-----	-----	-----
+MFC11 J49    1.763 136.417 -34.500 ; MFC11  Instrument site outside Foz Hole.
+;                                    J49 tag  Foz Hole entrance.
+
+;	-----	-----	-----
+MFC13 J51    1.312 145.417 -16.750 ; MFC13  Instrument site outside Casteret Cave.
+;                                    J51 tag  Casteret Cave entrance.
+
+;	-----	-----	-----
+MFC02 MFC01 10.762 160.583  37.667 ; MFC02  Top of 0.3m rock on south bank of Jenolan River.
+;                                    MFC01  Instrument site outside J29.
+MFC01 J29    2.211 169.250  -2.333 ; J29 tag.
+
+;	-----	-----	-----
+MFC02 MFC16  9.332  40.417  14.250 ; MFC02  Top of 0.3m rock on south bank of Jenolan River.
+;                                    MFC16  Instrument site on slope south east of Jenolan River.
+MFC16 J14    4.676  30.250  -7.000 ; J14 tag  Middle entrance to Mammoth Cave.
+
+;	-----	-----	-----
+MFC03 J54    8.104 190.167  -2.500 ; MFC03  Instrument site in bed of Jenolan River.
+;                                    J54 tag.
+
+;	-----	-----	-----
+MFC04 MFC17  4.835  21.417  17.167 ; MFC04  Edge of 1.3m rock in Jenolan river below J13 entrance.
+MFC17 MFC18  2.170 210.250 -30.250 ; MFC17  Instrument site in bed of Jenolan River.
+; MFC18  10mm hole drilled in top of 3m rock in Jenolan River outside J13, previous survey.		
+;	-----	-----	-----
+MFC17 MFC19 11.115 164.583  -2.833 ; MFC17  Instrument site in bed of Jenolan River.
+; MFC19  Unlabelled aluminium tag on bluff below J13, previous survey.
+
+*end surface

@@ -1,0 +1,20 @@
+*begin dupce2
+
+*infer exports on
+
+*title "Jaskinia na Dupce"
+
+*units tape metres
+
+*entrance 2_2
+*team "P. Kulpa" compass clino
+*team "J. Kucia" tape
+*team "W. Graban" notes
+*date 2019.05.18
+
+*data normal from to tape compass clino
+
+2	2_1	4.5	315	22
+2_1	2_2	5.0	297	41
+
+*end
