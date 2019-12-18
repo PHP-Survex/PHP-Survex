@@ -12,6 +12,7 @@
 *team "Waldemar Graban" compass clino - lider
 *team "Paulina Kulpa"   notes
 *team "Józef Kucia"     tape	      - dog
+*team ; test
 *date 2019.05.18
 
 *data normal from to tape compass clino

@@ -7,19 +7,19 @@ use Dartui\Survex\Tests\TestCase;
 
 class ParserTest extends TestCase
 {
-    public function testCanInitializeByConstructor()
-    {
-        $parser = new Parser('test');
+    // public function testCanInitializeByConstructor()
+    // {
+    //     $parser = new Parser('test');
 
-        $this->assertInstanceOf(Parser::class, $parser);
-    }
+    //     $this->assertInstanceOf(Parser::class, $parser);
+    // }
 
-    public function testCanInitializeByStaticMethod()
-    {
-        $parser = Parser::make('test');
+    // public function testCanInitializeByStaticMethod()
+    // {
+    //     $parser = Parser::make('test');
 
-        $this->assertInstanceOf(Parser::class, $parser);
-    }
+    //     $this->assertInstanceOf(Parser::class, $parser);
+    // }
 
     public function testCanParseBaseFile()
     {
@@ -28,5 +28,6 @@ class ParserTest extends TestCase
         $parser   = Parser::make($content);
 
         $surveys = $parser->parse();
+        dump($surveys->first());
     }
 }

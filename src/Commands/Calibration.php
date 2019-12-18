@@ -1,6 +1,6 @@
 <?php
 
-namespace Dartui\Survex\Survey\Calibration;
+namespace Dartui\Survex\Commands;
 
 class Calibration
 {

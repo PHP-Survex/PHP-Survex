@@ -14,7 +14,7 @@ class Line
 
     protected $comment;
 
-    protected $type;
+    protected $type = LineType::INFORMATION;
 
     final public function __construct($content, $title = null, $data = null, $comment = null)
     {

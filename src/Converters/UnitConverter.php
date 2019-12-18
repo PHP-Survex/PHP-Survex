@@ -1,17 +1,18 @@
 <?php
 
-namespace Dartui\Survex\Survey\Unit;
+namespace Dartui\Survex\Converters;
 
+use Dartui\Survex\Commands\Unit;
+use Dartui\Survex\Commands\UnitCollection;
 use Dartui\Survex\Parser\Line;
 use Dartui\Survex\Support\Collection;
-use Dartui\Survex\Survey\Unit\Unit;
 
-class UnitCollection extends Collection
+class UnitConverter
 {
-    public static function fromLine(Line $line)
+    public function convert(Line $line)
     {
-        $collection = new static();
-        $quantities = [];
+        $unitCollection = new UnitCollection();
+        $quantities     = [];
 
         $values = Collection::make($line->getData()->getValues())->reverse();
 
@@ -33,18 +34,11 @@ class UnitCollection extends Collection
         }
 
         foreach ($quantities as $quantity) {
-            $collection->append(
+            $unitCollection->append(
                 new Unit($quantity, $units, $factor)
             );
         }
 
-        return $collection;
+        return $unitCollection;
     }
-
-    // public function get($key)
-    // {
-    //     return $this->first(function ($unit) use ($key) {
-    //         return $unit->getQuantity() == $key;
-    //     });
-    // }
 }

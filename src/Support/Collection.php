@@ -50,6 +50,13 @@ class Collection implements IteratorAggregate
         return $this;
     }
 
+    public function forget($key)
+    {
+        unset($this->items[$key]);
+
+        return $this;
+    }
+
     public function first(callable $callback = null)
     {
         foreach ($this->items as $item) {

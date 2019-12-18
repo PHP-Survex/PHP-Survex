@@ -2,11 +2,15 @@
 
 namespace Dartui\Survex;
 
+use Dartui\Survex\Commands\Calibration;
+use Dartui\Survex\Commands\CalibrationCollection;
+use Dartui\Survex\Commands\Team;
+use Dartui\Survex\Commands\TeamCollection;
+use Dartui\Survex\Commands\Unit;
+use Dartui\Survex\Commands\UnitCollection;
+use Dartui\Survex\Converters\TeamConverter;
+use Dartui\Survex\Converters\UnitConverter;
 use Dartui\Survex\Parser\LineCollection;
-use Dartui\Survex\Survey\Calibration\Calibration;
-use Dartui\Survex\Survey\Calibration\CalibrationCollection;
-use Dartui\Survex\Survey\Unit\Unit;
-use Dartui\Survex\Survey\Unit\UnitCollection;
 
 class Survey
 {
@@ -18,10 +22,13 @@ class Survey
 
     protected $units;
 
+    protected $team;
+
     final public function __construct()
     {
         $this->calibrations = new CalibrationCollection();
         $this->units        = new UnitCollection();
+        $this->team         = new TeamCollection();
     }
 
     public static function fromLines(LineCollection $lines)
@@ -47,9 +54,16 @@ class Survey
                     break;
                 case 'units':
                     $survey->addUnits(
-                        UnitCollection::fromLine($line)
+                        (new UnitConverter())->convert($line)
                     );
                     break;
+                case 'team':
+                    $survey->addTeam(
+                        (new TeamConverter())->convert($line)
+                    );
+                    break;
+                case 'date':
+                    $survey->addDate();
             }
         }
 
@@ -94,6 +108,13 @@ class Survey
     public function addUnit(Unit $unit)
     {
         $this->units->append($unit);
+
+        return $this;
+    }
+
+    public function addTeam(Team $team)
+    {
+        $this->team->append($team);
 
         return $this;
     }

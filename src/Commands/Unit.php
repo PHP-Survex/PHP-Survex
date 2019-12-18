@@ -1,6 +1,6 @@
 <?php
 
-namespace Dartui\Survex\Survey\Unit;
+namespace Dartui\Survex\Commands;
 
 /**
  * @todo validation
