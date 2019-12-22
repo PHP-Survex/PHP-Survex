@@ -1,8 +1,8 @@
 <?php
 
-namespace Dartui\Survex\Parser;
+namespace PHPSurvex\PHPSurvex\Parser;
 
-use Dartui\Survex\Support\Collection;
+use PHPSurvex\PHPSurvex\Support\Collection;
 
 class LineCollection extends Collection
 {

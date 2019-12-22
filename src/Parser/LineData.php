@@ -1,6 +1,6 @@
 <?php
 
-namespace Dartui\Survex\Parser;
+namespace PHPSurvex\PHPSurvex\Parser;
 
 class LineData
 {

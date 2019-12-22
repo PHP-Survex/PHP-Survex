@@ -1,6 +1,6 @@
 <?php
 
-namespace Dartui\Survex\Enums;
+namespace PHPSurvex\PHPSurvex\Enums;
 
 final class LineType
 {

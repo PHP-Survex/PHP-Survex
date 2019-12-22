@@ -1,10 +1,10 @@
 <?php
 
-namespace Dartui\Survex\Converters;
+namespace PHPSurvex\PHPSurvex\Converters;
 
-use Dartui\Survex\Commands\Date;
-use Dartui\Survex\Commands\DateRange;
-use Dartui\Survex\Parser\Line;
+use PHPSurvex\PHPSurvex\Commands\Date;
+use PHPSurvex\PHPSurvex\Commands\DateRange;
+use PHPSurvex\PHPSurvex\Parser\Line;
 
 class DateConverter
 {

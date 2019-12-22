@@ -1,9 +1,9 @@
 <?php
 
-namespace Dartui\Survex\Tests\Unit;
+namespace PHPSurvex\PHPSurvex\Tests\Unit;
 
-use Dartui\Survex\Parser\Parser;
-use Dartui\Survex\Tests\TestCase;
+use PHPSurvex\PHPSurvex\Parser\Parser;
+use PHPSurvex\PHPSurvex\Tests\TestCase;
 
 class ParserTest extends TestCase
 {

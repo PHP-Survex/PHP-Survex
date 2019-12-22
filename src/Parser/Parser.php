@@ -1,12 +1,12 @@
 <?php
 
-namespace Dartui\Survex\Parser;
+namespace PHPSurvex\PHPSurvex\Parser;
 
-use Dartui\Survex\Parser\Line;
-use Dartui\Survex\Parser\LineCollection;
-use Dartui\Survex\Parser\LineStack;
-use Dartui\Survex\Survey;
-use Dartui\Survex\SurveyCollection;
+use PHPSurvex\PHPSurvex\Parser\Line;
+use PHPSurvex\PHPSurvex\Parser\LineCollection;
+use PHPSurvex\PHPSurvex\Parser\LineStack;
+use PHPSurvex\PHPSurvex\Survey;
+use PHPSurvex\PHPSurvex\SurveyCollection;
 
 class Parser
 {

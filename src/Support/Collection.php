@@ -1,6 +1,6 @@
 <?php
 
-namespace Dartui\Survex\Support;
+namespace PHPSurvex\PHPSurvex\Support;
 
 use ArrayIterator;
 use IteratorAggregate;

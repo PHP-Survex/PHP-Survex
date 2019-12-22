@@ -1,11 +1,11 @@
 <?php
 
-namespace Dartui\Survex\Converters;
+namespace PHPSurvex\PHPSurvex\Converters;
 
-use Dartui\Survex\Commands\Unit;
-use Dartui\Survex\Commands\UnitCollection;
-use Dartui\Survex\Parser\Line;
-use Dartui\Survex\Support\Collection;
+use PHPSurvex\PHPSurvex\Commands\Unit;
+use PHPSurvex\PHPSurvex\Commands\UnitCollection;
+use PHPSurvex\PHPSurvex\Parser\Line;
+use PHPSurvex\PHPSurvex\Support\Collection;
 
 class UnitConverter
 {

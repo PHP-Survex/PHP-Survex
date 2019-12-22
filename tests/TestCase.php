@@ -1,6 +1,6 @@
 <?php
 
-namespace Dartui\Survex\Tests;
+namespace PHPSurvex\PHPSurvex\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 

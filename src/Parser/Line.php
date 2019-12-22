@@ -1,8 +1,8 @@
 <?php
 
-namespace Dartui\Survex\Parser;
+namespace PHPSurvex\PHPSurvex\Parser;
 
-use Dartui\Survex\Enums\LineType;
+use PHPSurvex\PHPSurvex\Enums\LineType;
 
 class Line
 {

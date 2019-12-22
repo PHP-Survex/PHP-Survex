@@ -1,10 +1,10 @@
 <?php
 
-namespace Dartui\Survex\Converters;
+namespace PHPSurvex\PHPSurvex\Converters;
 
-use Dartui\Survex\Commands\Team;
-use Dartui\Survex\Parser\Line;
-use Dartui\Survex\Support\Collection;
+use PHPSurvex\PHPSurvex\Commands\Team;
+use PHPSurvex\PHPSurvex\Parser\Line;
+use PHPSurvex\PHPSurvex\Support\Collection;
 
 class TeamConverter
 {

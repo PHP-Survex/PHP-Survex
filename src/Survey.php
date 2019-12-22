@@ -1,20 +1,20 @@
 <?php
 
-namespace Dartui\Survex;
+namespace PHPSurvex\PHPSurvex;
 
-use Dartui\Survex\Commands\Calibration;
-use Dartui\Survex\Commands\CalibrationCollection;
-use Dartui\Survex\Commands\Date;
-use Dartui\Survex\Commands\DateCollection;
-use Dartui\Survex\Commands\DateRange;
-use Dartui\Survex\Commands\Team;
-use Dartui\Survex\Commands\TeamCollection;
-use Dartui\Survex\Commands\Unit;
-use Dartui\Survex\Commands\UnitCollection;
-use Dartui\Survex\Converters\DateConverter;
-use Dartui\Survex\Converters\TeamConverter;
-use Dartui\Survex\Converters\UnitConverter;
-use Dartui\Survex\Parser\LineCollection;
+use PHPSurvex\PHPSurvex\Commands\Calibration;
+use PHPSurvex\PHPSurvex\Commands\CalibrationCollection;
+use PHPSurvex\PHPSurvex\Commands\Date;
+use PHPSurvex\PHPSurvex\Commands\DateCollection;
+use PHPSurvex\PHPSurvex\Commands\DateRange;
+use PHPSurvex\PHPSurvex\Commands\Team;
+use PHPSurvex\PHPSurvex\Commands\TeamCollection;
+use PHPSurvex\PHPSurvex\Commands\Unit;
+use PHPSurvex\PHPSurvex\Commands\UnitCollection;
+use PHPSurvex\PHPSurvex\Converters\DateConverter;
+use PHPSurvex\PHPSurvex\Converters\TeamConverter;
+use PHPSurvex\PHPSurvex\Converters\UnitConverter;
+use PHPSurvex\PHPSurvex\Parser\LineCollection;
 
 class Survey
 {

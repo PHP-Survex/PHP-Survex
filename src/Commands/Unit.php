@@ -1,6 +1,6 @@
 <?php
 
-namespace Dartui\Survex\Commands;
+namespace PHPSurvex\PHPSurvex\Commands;
 
 /**
  * @todo validation

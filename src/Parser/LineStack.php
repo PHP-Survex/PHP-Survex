@@ -1,9 +1,9 @@
 <?php
 
-namespace Dartui\Survex\Parser;
+namespace PHPSurvex\PHPSurvex\Parser;
 
-use Dartui\Survex\Parser\LineCollection;
-use Dartui\Survex\Support\Collection;
+use PHPSurvex\PHPSurvex\Parser\LineCollection;
+use PHPSurvex\PHPSurvex\Support\Collection;
 
 class LineStack extends Collection
 {

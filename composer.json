@@ -1,5 +1,5 @@
 {
-    "name": "dartui/survex-php",
+    "name": "php-survex/php-survex",
     "type": "library",
     "license": "MIT",
     "authors": [{
@@ -16,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Dartui\\Survex\\": "src/"
+            "PHPSurvex\\PHPSurvex\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dartui\\Survex\\Tests\\": "tests\\"
+            "PHPSurvex\\PHPSurvex\\Tests\\": "tests\\"
         }
     }
 }

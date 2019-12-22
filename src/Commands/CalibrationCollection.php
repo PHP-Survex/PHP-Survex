@@ -1,10 +1,10 @@
 <?php
 
-namespace Dartui\Survex\Commands;
+namespace PHPSurvex\PHPSurvex\Commands;
 
-use Dartui\Survex\Commands\Calibration;
-use Dartui\Survex\Parser\Line;
-use Dartui\Survex\Support\Collection;
+use PHPSurvex\PHPSurvex\Commands\Calibration;
+use PHPSurvex\PHPSurvex\Parser\Line;
+use PHPSurvex\PHPSurvex\Support\Collection;
 
 class CalibrationCollection extends Collection
 {

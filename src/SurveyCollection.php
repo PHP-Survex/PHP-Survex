@@ -1,8 +1,8 @@
 <?php
 
-namespace Dartui\Survex;
+namespace PHPSurvex\PHPSurvex;
 
-use Dartui\Survex\Support\Collection;
+use PHPSurvex\PHPSurvex\Support\Collection;
 
 class SurveyCollection extends Collection
 {

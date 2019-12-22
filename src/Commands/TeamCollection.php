@@ -1,8 +1,8 @@
 <?php
 
-namespace Dartui\Survex\Commands;
+namespace PHPSurvex\PHPSurvex\Commands;
 
-use Dartui\Survex\Support\Collection;
+use PHPSurvex\PHPSurvex\Support\Collection;
 
 class TeamCollection extends Collection
 {
