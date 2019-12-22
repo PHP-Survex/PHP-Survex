@@ -14,7 +14,7 @@ class Date
     {
         $this->setYear($year);
         $this->setMonth($month);
-        $this->setDat($day);
+        $this->setDay($day);
     }
 
     public function setYear($year)

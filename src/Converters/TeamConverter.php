@@ -12,12 +12,7 @@ class TeamConverter
     {
         $values = new Collection($line->getData()->getValues());
 
-        $patterns = [
-            '/^"(?P<name>.+?)"(?:\s+(?P<roles>.+?))?$/',
-            '/^(?P<name>.+?)(?:\s+(?P<roles>.+?))?$/',
-        ];
-
-        foreach ($patterns as $pattern) {
+        foreach ($this->patterns() as $pattern) {
             preg_match($pattern, $line->getData()->getContent(), $matches);
 
             if (!isset($matches['name'])) {
@@ -37,5 +32,13 @@ class TeamConverter
         }
 
         throw new \Exception('invalid team member');
+    }
+
+    public function patterns()
+    {
+        return [
+            '/^"(?P<name>.+?)"(?:\s+(?P<roles>.+?))?$/',
+            '/^(?P<name>.+?)(?:\s+(?P<roles>.+?))?$/',
+        ];
     }
 }

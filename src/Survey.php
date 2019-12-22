@@ -4,10 +4,14 @@ namespace Dartui\Survex;
 
 use Dartui\Survex\Commands\Calibration;
 use Dartui\Survex\Commands\CalibrationCollection;
+use Dartui\Survex\Commands\Date;
+use Dartui\Survex\Commands\DateCollection;
+use Dartui\Survex\Commands\DateRange;
 use Dartui\Survex\Commands\Team;
 use Dartui\Survex\Commands\TeamCollection;
 use Dartui\Survex\Commands\Unit;
 use Dartui\Survex\Commands\UnitCollection;
+use Dartui\Survex\Converters\DateConverter;
 use Dartui\Survex\Converters\TeamConverter;
 use Dartui\Survex\Converters\UnitConverter;
 use Dartui\Survex\Parser\LineCollection;
@@ -24,11 +28,14 @@ class Survey
 
     protected $team;
 
+    protected $dates;
+
     final public function __construct()
     {
         $this->calibrations = new CalibrationCollection();
         $this->units        = new UnitCollection();
         $this->team         = new TeamCollection();
+        $this->dates        = new DateCollection();
     }
 
     public static function fromLines(LineCollection $lines)
@@ -63,7 +70,14 @@ class Survey
                     );
                     break;
                 case 'date':
-                    $survey->addDate();
+                    $date = (new DateConverter())->convert($line);
+
+                    if ($date instanceof DateRange) {
+                        $survey->addDateRange($date);
+                    } elseif ($date instanceof Date) {
+                        $survey->addDate($date);
+                    }
+                    break;
             }
         }
 
@@ -115,6 +129,20 @@ class Survey
     public function addTeam(Team $team)
     {
         $this->team->append($team);
+
+        return $this;
+    }
+
+    public function addDate(Date $date)
+    {
+        $this->dates->append($date);
+
+        return $this;
+    }
+
+    public function addDateRange(DateRange $dateRange)
+    {
+        $this->dates->append($dateRange);
 
         return $this;
     }
