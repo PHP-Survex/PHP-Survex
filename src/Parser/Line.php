@@ -24,14 +24,14 @@ class Line
         $this->setComment($comment);
     }
 
-    public static function commentLine($content)
+    public static function commentLine($comment)
     {
-        return (new static($content))->setType(LineType::COMMENT);
+        return (new static('', null, null, $comment))->setType(LineType::COMMENT);
     }
 
-    public static function valueLine($content)
+    public static function measurementLine($content, $comment = null)
     {
-        return (new static($content))->setType(LineType::VALUE);
+        return (new static($content, null, null, $comment))->setType(LineType::MEASUREMENT);
     }
 
     public static function informationLine($content, $title = null, $data = null, $comment = null)
@@ -49,7 +49,9 @@ class Line
         preg_match($this->linePattern(), $this->content, $matches);
 
         if (count($matches) === 0) {
-            return static::valueLine($this->content);
+            $parts = explode(';', $this->content);
+
+            return static::measurementLine($parts[0], isset($parts[1]) ? $parts[1] : null);
         }
 
         return static::informationLine(

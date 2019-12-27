@@ -4,7 +4,7 @@ namespace PHPSurvex\PHPSurvex\Commands;
 
 use PHPSurvex\PHPSurvex\Support\Collection;
 
-class CalibrationCollection extends Collection
+class MeasurementCollection extends Collection
 {
     //
 }

@@ -65,7 +65,7 @@ class Parser
         $collection = new SurveyCollection();
 
         $stack->each(function ($lines) use ($collection) {
-            $collection->append(Survey::fromLines($lines));
+            $collection->append(new Survey($lines));
         });
 
         return $collection;

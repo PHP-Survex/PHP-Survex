@@ -107,6 +107,11 @@ class Collection implements IteratorAggregate
         return $this;
     }
 
+    public function contains($value)
+    {
+        return in_array($value, $this->items);
+    }
+
     public function getIterator()
     {
         return new ArrayIterator($this->items);
