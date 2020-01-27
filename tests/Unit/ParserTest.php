@@ -28,6 +28,14 @@ class ParserTest extends TestCase
         $parser   = Parser::make($content);
 
         $surveys = $parser->parse();
-        dump($surveys->first());
+
+        $survey = $surveys->first();
+        $data   = $survey->getData()->first();
+
+        foreach ($data->getMeasurements() as $measurement) {
+            dump($measurement->getValues());
+        }
+
+        // dump($surveys->first()->getData()->first()->getMeasurements()->first()->getValues());
     }
 }

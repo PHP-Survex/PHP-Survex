@@ -19,4 +19,9 @@ class Measurement
 
         return $this;
     }
+
+    public function getValues()
+    {
+        return $this->values;
+    }
 }

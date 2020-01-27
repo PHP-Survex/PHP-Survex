@@ -30,6 +30,11 @@ class Data
         return $this->style ?: 'normal';
     }
 
+    public function getMeasurements()
+    {
+        return $this->measurements;
+    }
+
     public function setOrdering(array $ordering = null)
     {
         $this->ordering = $ordering;
